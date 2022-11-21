@@ -97,3 +97,48 @@ export const experience = [
     ],
   },
 ];
+
+export const projects = [
+  {
+    img: require("./images/foto.png"),
+    title: "Blog Website",
+    description:
+      "Simple blog website with the ability to write a post and view it.",
+  },
+  {
+    img: require("./images/blog.png"),
+    title: "Blog Website",
+    description:
+      "Simple blog website with the ability to write a post and view it.",
+  },
+  {
+    img: require("./images/jarvis.png"),
+    title: "Blog Website",
+    description:
+      "Simple blog website with the ability to write a post and view it.",
+  },
+  {
+    img: require("./images/novel.png"),
+    title: "Blog Website",
+    description:
+      "Simple blog website with the ability to write a post and view it.",
+  },
+  {
+    img: require("./images/stressword.png"),
+    title: "Blog Website",
+    description:
+      "Simple blog website with the ability to write a post and view it.",
+  },
+  {
+    img: require("./images/portfoliov1.png"),
+    title: "Blog Website",
+    description:
+      "Simple blog website with the ability to write a post and view it.",
+  },
+  {
+    img: require("./images/swapi.png"),
+    title: "Blog Website",
+    description:
+      "Simple blog website with the ability to write a post and view it.",
+  },
+];
