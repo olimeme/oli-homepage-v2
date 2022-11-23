@@ -10,16 +10,21 @@ import {
   Text,
   Wrap,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import { FaHeading } from "react-icons/fa";
 import Section from "../Section/Section";
 import { useNavigate } from "react-router";
 import { ArrowLeftIcon } from "@chakra-ui/icons";
 import { motion } from "framer-motion";
 import { projects } from "../../info";
+import { GitHubService } from "../../services/GitHubService";
 
 const Projects = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    GitHubService.exampleGetReq().then(({ data }) => console.log(data));
+  }, []);
 
   const items = projects.map((item) => (
     <Card boxShadow={"none"}>

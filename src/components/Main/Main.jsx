@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button, Center, Container, useDisclosure } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
@@ -8,6 +8,7 @@ import Interests from "../Interests";
 import Socials from "../Socials";
 import Footer from "../Footer";
 import { motion } from "framer-motion";
+import { GitHubService } from "../../services/GitHubService";
 
 const Main = () => {
   const { onToggle } = useDisclosure();
