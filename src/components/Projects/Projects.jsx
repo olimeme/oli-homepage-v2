@@ -6,7 +6,9 @@ import {
   Image,
   Link,
   Spacer,
+  Tag,
   Text,
+  Wrap,
 } from "@chakra-ui/react";
 import React from "react";
 import { FaHeading } from "react-icons/fa";
@@ -24,11 +26,18 @@ const Projects = () => {
       <CardBody>
         <Link href={item.link}>
           <Image src={item.img}></Image>
-          <Heading fontSize={"xl"} mt={2}>
+        </Link>
+        <Wrap pt={2}>
+          <Heading fontSize={"xl"} mt={2} mr={10}>
             {item.title}
           </Heading>
-          <Text mt={2}>{item.description}</Text>
-        </Link>
+          {item.stack.map((item) => (
+            <Tag size="sm" variant={"solid"} colorScheme={item.color} mt={1}>
+              {item.name}
+            </Tag>
+          ))}
+        </Wrap>
+        <Text mt={2}>{item.description}</Text>
       </CardBody>
     </Card>
   ));
