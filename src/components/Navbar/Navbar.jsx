@@ -22,8 +22,8 @@ import {
   Tag,
   Link,
 } from "@chakra-ui/react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { techStack } from "../../info";
+import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
+import { techStack, navInfo } from "../../info";
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -37,8 +37,8 @@ const Navbar = () => {
   return (
     <HStack spacing={"auto"} alignItems="baseline" mt="5">
       <Stack justifyContent={"flex-start"}>
-        <Heading>Alibek Mombekov</Heading>
-        <Text fontSize="md">Frontend developer</Text>
+        <Heading>{navInfo.name}</Heading>
+        <Text fontSize="md">{navInfo.position}</Text>
         <Wrap pt={2}>{badges}</Wrap>
       </Stack>
       <HStack>
@@ -52,27 +52,34 @@ const Navbar = () => {
             Links
           </MenuButton>
           <MenuList size="sm">
-            <Link href="https://github.com/olimeme" isExternal>
+            <Link href={navInfo.githubLink} isExternal>
               <MenuItem
                 variant={"ghost"}
-                size="sm"
                 icon={<FaGithub />}
                 colorScheme={"gray"}
+                fontSize={18}
               >
                 GitHub <ExternalLinkIcon mx="2px" fontSize={"xs"} mb={1} />
               </MenuItem>
             </Link>
-            <Link
-              href="https://www.linkedin.com/in/alibek-mombekov-247a81201/"
-              isExternal
-            >
+            <Link href={navInfo.linkedInLink} isExternal>
               <MenuItem
                 variant={"ghost"}
-                size="sm"
                 icon={<FaLinkedin />}
                 colorScheme={"linkedin"}
+                fontSize={18}
               >
                 LinkedIn <ExternalLinkIcon mx="2px" fontSize={"xs"} mb={1} />
+              </MenuItem>
+            </Link>
+            <Link href={navInfo.resumeLink} isExternal>
+              <MenuItem
+                variant={"ghost"}
+                icon={<FaFileAlt />}
+                colorScheme={"grey"}
+                fontSize={18}
+              >
+                Resume <ExternalLinkIcon mx="2px" fontSize={"xs"} mb={1} />
               </MenuItem>
             </Link>
           </MenuList>

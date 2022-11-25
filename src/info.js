@@ -1,3 +1,12 @@
+export const navInfo = {
+  name: "Alibek Mombekov",
+  position: "Frontend Developer",
+  githubLink: "https://github.com/olimeme",
+  linkedInLink: "https://www.linkedin.com/in/alibek-mombekov-247a81201/",
+  resumeLink:
+    "https://docs.google.com/document/d/1hwVDTgErESmpS5SohSBlhFkY7jd9ELN_/edit",
+};
+
 export const techStack = [
   {
     title: "React",
@@ -101,6 +110,7 @@ export const experience = [
 export const projects = [
   {
     img: require("./images/foto.png"),
+    link: "https://github.com/olimeme/foto",
     title: "Foto",
     description:
       "A copy of Pinterest authenticated with Google Authentication. Ability to save, load and download pictures. It is also possible to comment on your own and other people's Pins.",
@@ -120,28 +130,9 @@ export const projects = [
     ],
   },
   {
-    img: require("./images/blog.png"),
-    title: "Blog Website",
-    description:
-      "Simple blog website with the ability to write a post and view it.",
-    stack: [
-      {
-        name: "EJS",
-        color: "pink",
-      },
-      {
-        name: "Express",
-        color: "green",
-      },
-      {
-        name: "Node",
-        color: "green",
-      },
-    ],
-  },
-  {
     img: require("./images/novel.png"),
     title: "Visual Novel",
+    link: "https://github.com/olimeme/Birthday-game",
     description:
       "A game/visual novel written in Python for a friend's birthday.",
     stack: [
@@ -157,6 +148,7 @@ export const projects = [
   },
   {
     img: require("./images/jarvis.png"),
+    link: "https://github.com/olimeme/speechrecognition",
     title: "Speech recognition system",
     description:
       "Project inspired by the film 'Iron Man'. Desktop JARVIS for everyday tasks, with the ability to open websites, news, mail, browser, etc.",
@@ -170,6 +162,7 @@ export const projects = [
   {
     img: require("./images/stressword.png"),
     title: "Stress Letter Game",
+    link: "https://github.com/olimeme/stress-letter-game",
     description:
       "A game to improve the knowledge of the stress in the words of the Russian language.",
     stack: [
@@ -181,6 +174,7 @@ export const projects = [
   },
   {
     img: require("./images/portfoliov1.png"),
+    link: "https://github.com/olimeme/oli-homepage",
     title: "Portfolio v1",
     description: "My first ever portfolio website made",
     stack: [
@@ -205,6 +199,7 @@ export const projects = [
   {
     img: require("./images/swapi.png"),
     title: "Star Wars BD",
+    link: "https://github.com/olimeme/star-db",
     description:
       "Database website made by SWAPI service (first React project).",
     stack: [
@@ -213,5 +208,59 @@ export const projects = [
         color: "blue",
       },
     ],
+  },
+];
+
+export const interests = [
+  {
+    name: "Beatmaking",
+    link: "https://soundcloud.com/ilo_beats",
+  },
+  {
+    name: "Music",
+    link: "",
+  },
+  {
+    name: "Games",
+    link: "",
+  },
+  {
+    name: "Running",
+    link: "",
+  },
+  {
+    name: "Fitness",
+    link: "",
+  },
+  {
+    name: "Podcasts",
+    link: "",
+  },
+  {
+    name: "Coffee",
+    link: "",
+  },
+];
+
+export const socials = [
+  {
+    username: "@olimeme",
+    social: "telegram",
+    link: "https://t.me/olimeme",
+  },
+  {
+    username: "После Вечера",
+    social: "telegram",
+    link: "https://t.me/+mX_5ViDZ5oY0ZWU6",
+  },
+  {
+    username: "@banana_smoothie_oli",
+    social: "instagram",
+    link: "https://www.instagram.com/banana_smoothie_oli/",
+  },
+  {
+    username: "AITU Podcast",
+    social: "podcast",
+    link: "https://podcasts.apple.com/us/podcast/aitu-podcast/id1557667084",
   },
 ];

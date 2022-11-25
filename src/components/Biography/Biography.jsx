@@ -13,7 +13,7 @@ import Section from "../Section/Section";
 
 const Biography = () => {
   const listItems = biography.map((item) => (
-    <ListItem>
+    <ListItem key={item.year}>
       <HStack spacing={5}>
         <Heading fontSize={"lg"}>{item.year}</Heading>
         <Text>{item.description}</Text>

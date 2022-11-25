@@ -8,7 +8,6 @@ import Interests from "../Interests";
 import Socials from "../Socials";
 import Footer from "../Footer";
 import { motion } from "framer-motion";
-import { GitHubService } from "../../services/GitHubService";
 
 const Main = () => {
   const { onToggle } = useDisclosure();

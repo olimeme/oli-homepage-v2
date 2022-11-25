@@ -12,7 +12,7 @@ import Section from "../Section/Section";
 
 const Experience = () => {
   const listItems = experience.map((item) => (
-    <ListItem>
+    <ListItem key={item.title}>
       <Heading fontSize={"lg"}>{item.title}</Heading>
       <Text fontSize={"sm"} as="i" color="grey">
         {item.time}
