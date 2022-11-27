@@ -209,6 +209,22 @@ export const projects = [
       },
     ],
   },
+  {
+    img: require("./images/kanye.png"),
+    title: "Random Kanye Quote",
+    link: "https://github.com/olimeme/random-kanye-quotes",
+    description: "Random Kanye Quotes every 10 sec using React Query.",
+    stack: [
+      {
+        name: "React",
+        color: "blue",
+      },
+      {
+        name: "Typescript",
+        color: "blue",
+      },
+    ],
+  },
 ];
 
 export const interests = [
