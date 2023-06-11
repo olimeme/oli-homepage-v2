@@ -8,13 +8,15 @@ import {
   Spacer,
   Tag,
   Text,
+  IconButton,
   Wrap,
 } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { FaHeading } from "react-icons/fa";
 import Section from "../Section/Section";
 import { useNavigate } from "react-router";
-import { ArrowLeftIcon } from "@chakra-ui/icons";
+import { FaGithub } from "react-icons/fa";
+import { ArrowLeftIcon, ExternalLinkIcon } from "@chakra-ui/icons";
 import { motion } from "framer-motion";
 import { projects } from "../../info";
 
@@ -22,23 +24,22 @@ const Projects = () => {
   const navigate = useNavigate();
 
   const items = projects.map((item) => (
-    <Card boxShadow={"none"}>
-      <CardBody>
-        <Link href={item.link}>
-          <Image src={item.img}></Image>
-        </Link>
-        <Wrap pt={2}>
-          <Heading fontSize={"xl"} mt={2} mr={10}>
-            {item.title}
-          </Heading>
-          {item.stack.map((item) => (
-            <Tag size="sm" variant={"solid"} colorScheme={item.color} mt={1}>
-              {item.name}
-            </Tag>
-          ))}
-        </Wrap>
-        <Text mt={2}>{item.description}</Text>
-      </CardBody>
+    <Card boxShadow={"none"} key={item.title}>
+      <Link href={item.link} isExternal>
+        <CardBody>
+          <Wrap pt={2}>
+            <Heading fontSize={"xl"} mt={2} mr={10}>
+              {item.title}
+            </Heading>
+            {item.stack.map((item) => (
+              <Tag size="sm" variant={"solid"} colorScheme={item.color} mt={1}>
+                {item.name}
+              </Tag>
+            ))}
+          </Wrap>
+          <Text my={2}>{item.description}</Text>
+        </CardBody>
+      </Link>
     </Card>
   ));
 

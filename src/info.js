@@ -4,7 +4,7 @@ export const navInfo = {
   githubLink: "https://github.com/olimeme",
   linkedInLink: "https://www.linkedin.com/in/alibek-mombekov-247a81201/",
   resumeLink:
-    "https://docs.google.com/document/d/1hwVDTgErESmpS5SohSBlhFkY7jd9ELN_/edit",
+    "https://drive.google.com/file/d/1YLxO6-0e4MyNdf7GN8-kTv7Il8yaQ43u/view?usp=sharing",
 };
 
 export const techStack = [
@@ -38,6 +38,10 @@ export const techStack = [
   // },
   {
     title: "PostgreSQL",
+    color: "blue",
+  },
+  {
+    title: "MySQL",
     color: "blue",
   },
   {
@@ -79,16 +83,8 @@ export const experience = [
     ],
   },
   {
-    time: "July, 2021 - December, 2021",
-    title: "Freelance",
-    description: [
-      "Written landing and business card sites.",
-      "Optimization of existing sites.",
-    ],
-  },
-  {
     time: "December, 2021 - February, 2022",
-    title: "Web Programming Curator at Morrison",
+    title: "Web Programming Instructor at Morrison",
     description: [
       "Help in mastering new topics.",
       "Conducting lectures.",
@@ -108,24 +104,45 @@ export const experience = [
 ];
 
 export const projects = [
+  // {
+  //   img: require("./images/foto.png"),
+  //   link: "https://github.com/olimeme/foto",
+  //   title: "Foto",
+  //   description:
+  //     "A copy of Pinterest authenticated with Google Authentication. Ability to save, load and download pictures. It is also possible to comment on your own and other people's Pins.",
+  //   stack: [
+  //     {
+  //       name: "React",
+  //       color: "blue",
+  //     },
+  //     {
+  //       name: "Sanity",
+  //       color: "red",
+  //     },
+  //     {
+  //       name: "Tailwind",
+  //       color: "teal",
+  //     },
+  //   ],
+  // },
   {
-    img: require("./images/foto.png"),
-    link: "https://github.com/olimeme/foto",
-    title: "Foto",
+    img: require("./images/maitools.png"),
+    title: "maitools",
+    link: "https://github.com/olimeme/maitools",
     description:
-      "A copy of Pinterest authenticated with Google Authentication. Ability to save, load and download pictures. It is also possible to comment on your own and other people's Pins.",
+      "All essential academic productivity tools, like Pomodoro Timer, Kanban Board, Whiteboard for collaborations, etc., in one place.",
     stack: [
       {
         name: "React",
         color: "blue",
       },
       {
-        name: "Sanity",
-        color: "red",
+        name: "Typescript",
+        color: "blue",
       },
       {
-        name: "Tailwind",
-        color: "teal",
+        name: "Node",
+        color: "green",
       },
     ],
   },
@@ -172,30 +189,30 @@ export const projects = [
       },
     ],
   },
-  {
-    img: require("./images/portfoliov1.png"),
-    link: "https://github.com/olimeme/oli-homepage",
-    title: "Portfolio v1",
-    description: "My first ever portfolio website made",
-    stack: [
-      {
-        name: "HTML",
-        color: "orange",
-      },
-      {
-        name: "CSS",
-        color: "blue",
-      },
-      {
-        name: "JS",
-        color: "yellow",
-      },
-      {
-        name: "SCSS",
-        color: "blue",
-      },
-    ],
-  },
+  // {
+  //   img: require("./images/portfoliov1.png"),
+  //   link: "https://github.com/olimeme/oli-homepage",
+  //   title: "Portfolio v1",
+  //   description: "My first ever portfolio website made",
+  //   stack: [
+  //     {
+  //       name: "HTML",
+  //       color: "orange",
+  //     },
+  //     {
+  //       name: "CSS",
+  //       color: "blue",
+  //     },
+  //     {
+  //       name: "JS",
+  //       color: "yellow",
+  //     },
+  //     {
+  //       name: "SCSS",
+  //       color: "blue",
+  //     },
+  //   ],
+  // },
   {
     img: require("./images/swapi.png"),
     title: "Star Wars BD",
@@ -270,9 +287,9 @@ export const socials = [
     link: "https://t.me/+mX_5ViDZ5oY0ZWU6",
   },
   {
-    username: "@banana_smoothie_oli",
+    username: "@oli_san_",
     social: "instagram",
-    link: "https://www.instagram.com/banana_smoothie_oli/",
+    link: "https://www.instagram.com/oli_san_/",
   },
   {
     username: "AITU Podcast",

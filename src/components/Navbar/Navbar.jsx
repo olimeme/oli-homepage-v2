@@ -29,7 +29,7 @@ const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   const badges = techStack.map((item) => (
-    <Tag size="sm" variant={"solid"} colorScheme={item.color}>
+    <Tag size="sm" variant={"solid"} colorScheme={item.color} key={item.title}>
       {item.title}
     </Tag>
   ));
