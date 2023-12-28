@@ -13,6 +13,7 @@ import {
   FaInstagram,
   FaTelegram,
   FaEnvelope,
+  FaBook,
 } from "react-icons/fa";
 import { TiLocationOutline } from "react-icons/ti";
 
@@ -33,6 +34,15 @@ const Navbar = () => {
           </Link>
         </HStack>
         <HStack>
+          <Link href={navInfo.blogLink} isExternal>
+            <IconButton
+              size="sm"
+              aria-label="Blog"
+              variant={"outline"}
+              icon={<FaBook />}
+              colorScheme={"gray"}
+            ></IconButton>
+          </Link>
           <Link href={navInfo.githubLink} isExternal>
             <IconButton
               size="sm"
