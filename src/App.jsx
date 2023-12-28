@@ -1,12 +1,12 @@
-import { Button, Center, Container } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
-import AnimatedRoutes from "./AnimatedRoutes";
+import Main from "./components/Main";
 
 function App() {
   return (
-    <Container maxW={500}>
+    <Container maxW={900}>
       <Navbar />
-      <AnimatedRoutes />
+      <Main />
     </Container>
   );
 }

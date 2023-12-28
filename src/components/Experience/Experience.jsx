@@ -1,5 +1,6 @@
 import {
   Card,
+  HStack,
   Heading,
   List,
   ListItem,
@@ -13,21 +14,33 @@ import Section from "../Section/Section";
 const Experience = () => {
   const listItems = experience.map((item) => (
     <ListItem key={item.title}>
-      <Heading fontSize={"lg"}>{item.title}</Heading>
-      <Text fontSize={"sm"} as="i" color="grey">
-        {item.time}
-      </Text>
-      <List spacing={1}>
+      <HStack spacing={"auto"}>
+        <Heading fontSize={"lg"}>{item.employer}</Heading>
+        <Text fontSize={"sm"} as="i" color="grey">
+          {item.time}
+        </Text>
+      </HStack>
+      <Text>{item.title}</Text>
+      <UnorderedList>
         {item.description.map((item) => (
-          <ListItem>- {item}</ListItem>
+          <ListItem
+            color="grey"
+            fontSize={"xs"}
+            textAlign={"justify"}
+            key={item.length + Math.random()}
+          >
+            {item}
+          </ListItem>
         ))}
-      </List>
+      </UnorderedList>
     </ListItem>
   ));
 
   return (
     <Section title="Experience">
-      <UnorderedList spacing={5}>{listItems}</UnorderedList>
+      <UnorderedList spacing={6} styleType={"none"} m={0}>
+        {listItems}
+      </UnorderedList>
     </Section>
   );
 };

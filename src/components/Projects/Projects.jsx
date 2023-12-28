@@ -10,56 +10,44 @@ import {
   Text,
   IconButton,
   Wrap,
+  Flex,
+  Grid,
+  GridItem,
+  CardFooter,
 } from "@chakra-ui/react";
 import React, { useEffect } from "react";
-import { FaHeading } from "react-icons/fa";
 import Section from "../Section/Section";
-import { useNavigate } from "react-router";
-import { FaGithub } from "react-icons/fa";
-import { ArrowLeftIcon, ExternalLinkIcon } from "@chakra-ui/icons";
-import { motion } from "framer-motion";
 import { projects } from "../../info";
 
 const Projects = () => {
-  const navigate = useNavigate();
-
   const items = projects.map((item) => (
-    <Card boxShadow={"none"} key={item.title}>
-      <Link href={item.link} isExternal>
-        <CardBody>
-          <Wrap pt={2}>
-            <Heading fontSize={"xl"} mt={2} mr={10}>
-              {item.title}
-            </Heading>
-            {item.stack.map((item) => (
-              <Tag size="sm" variant={"solid"} colorScheme={item.color} mt={1}>
-                {item.name}
-              </Tag>
-            ))}
-          </Wrap>
-          <Text my={2}>{item.description}</Text>
-        </CardBody>
-      </Link>
+    <Card key={item.title} s>
+      <CardBody>
+        <Link href={item.link} isExternal>
+          <Heading size={"md"}>{item.title}</Heading>
+        </Link>
+        <Text fontSize={"xs"} color={"gray"} mt={2}>
+          {item.description}
+        </Text>
+      </CardBody>
+      <CardFooter mt={-8}>
+        <Wrap pt={2}>
+          {item.stack.map((item) => (
+            <Tag size="sm" colorScheme={"gray"} mt={1}>
+              {item.name}
+            </Tag>
+          ))}
+        </Wrap>
+      </CardFooter>
     </Card>
   ));
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
-      exit={{ opacity: 0, y: 10 }}
-    >
-      <Button
-        leftIcon={<ArrowLeftIcon />}
-        mt={10}
-        onClick={() => navigate(-1)}
-        size="sm"
-      >
-        Back
-      </Button>
-      <Section title="Projects">{items}</Section>
-    </motion.div>
+    <Section title="Projects">
+      <Grid templateColumns="repeat(2, 1fr)" gap={8}>
+        {items}
+      </Grid>
+    </Section>
   );
 };
 

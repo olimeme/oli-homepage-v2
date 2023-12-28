@@ -1,8 +1,11 @@
 # My homepage
 
+> Inspired by [Bartosz Jarocki's CV website](https://github.com/bartoszjarocki/cv?tab=readme-ov-file)
+
 ## Stack
 
 - React.js
+- Typescript
 - Chakra UI
 
 ## License

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <Center p={10}>
       <Text fontSize={"sm"} color="grey">
-        © 2022 <Link href="https://github.com/olimeme">Alibek Mombekov</Link>.
+        © 2023 <Link href="https://github.com/olimeme">Alibek Mombekov</Link>.
         All Rights Reserved.
       </Text>
     </Center>

@@ -1,93 +1,94 @@
 import {
-  SunIcon,
-  MoonIcon,
-  ChevronDownIcon,
-  ExternalLinkIcon,
-} from "@chakra-ui/icons";
-import {
-  Button,
-  Icon,
-  useColorMode,
   Text,
   Heading,
-  VStack,
   Stack,
   HStack,
-  Badge,
-  Wrap,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-  Tag,
+  IconButton,
   Link,
 } from "@chakra-ui/react";
-import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
-import { techStack, navInfo } from "../../info";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaFileAlt,
+  FaInstagram,
+  FaTelegram,
+  FaEnvelope,
+} from "react-icons/fa";
+import { TiLocationOutline } from "react-icons/ti";
+
+import { navInfo } from "../../info";
 
 const Navbar = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
-
-  const badges = techStack.map((item) => (
-    <Tag size="sm" variant={"solid"} colorScheme={item.color} key={item.title}>
-      {item.title}
-    </Tag>
-  ));
-
   return (
-    <HStack spacing={"auto"} alignItems="baseline" mt="5">
+    <HStack spacing={"auto"} alignItems="baseline" mt="16">
       <Stack justifyContent={"flex-start"}>
         <Heading>{navInfo.name}</Heading>
-        <Text fontSize="md">{navInfo.position}</Text>
-        <Wrap pt={2}>{badges}</Wrap>
+        <Text fontSize="sm" color="grey">
+          {navInfo.position}
+        </Text>
+        <HStack spacing={2} mt={2} color="grey">
+          <TiLocationOutline />
+          <Link fontSize="sm" href={navInfo.locationUrl} isExternal>
+            {navInfo.location}
+          </Link>
+        </HStack>
+        <HStack>
+          <Link href={navInfo.githubLink} isExternal>
+            <IconButton
+              size="sm"
+              aria-label="Github"
+              variant={"outline"}
+              icon={<FaGithub />}
+              colorScheme={"gray"}
+            ></IconButton>
+          </Link>
+          <Link href={navInfo.linkedinLink} isExternal>
+            <IconButton
+              size="sm"
+              aria-label="LinkedIn"
+              variant={"outline"}
+              icon={<FaLinkedin />}
+              colorScheme={"gray"}
+            ></IconButton>
+          </Link>
+          <Link href={navInfo.instagramLink} isExternal>
+            <IconButton
+              size="sm"
+              aria-label="instagram"
+              variant={"outline"}
+              icon={<FaInstagram />}
+              colorScheme={"gray"}
+            ></IconButton>
+          </Link>
+          <Link href={navInfo.telegramLink} isExternal>
+            <IconButton
+              size="sm"
+              aria-label="telegram"
+              variant={"outline"}
+              icon={<FaTelegram />}
+              colorScheme={"gray"}
+            ></IconButton>
+          </Link>
+          <Link href={navInfo.mail} isExternal>
+            <IconButton
+              size="sm"
+              aria-label="mail"
+              variant={"outline"}
+              icon={<FaEnvelope />}
+              colorScheme={"gray"}
+            ></IconButton>
+          </Link>
+          <Link href={navInfo.resumeLink} isExternal>
+            <IconButton
+              size="sm"
+              aria-label="Resume"
+              variant={"outline"}
+              icon={<FaFileAlt />}
+              colorScheme={"gray"}
+            ></IconButton>
+          </Link>
+        </HStack>
       </Stack>
-      <HStack>
-        <Menu>
-          <MenuButton
-            as={Button}
-            rightIcon={<ChevronDownIcon />}
-            boxShadow={"lg"}
-            size={"sm"}
-          >
-            Links
-          </MenuButton>
-          <MenuList size="sm">
-            <Link href={navInfo.githubLink} isExternal>
-              <MenuItem
-                variant={"ghost"}
-                icon={<FaGithub />}
-                colorScheme={"gray"}
-                fontSize={18}
-              >
-                GitHub <ExternalLinkIcon mx="2px" fontSize={"xs"} mb={1} />
-              </MenuItem>
-            </Link>
-            <Link href={navInfo.linkedInLink} isExternal>
-              <MenuItem
-                variant={"ghost"}
-                icon={<FaLinkedin />}
-                colorScheme={"linkedin"}
-                fontSize={18}
-              >
-                LinkedIn <ExternalLinkIcon mx="2px" fontSize={"xs"} mb={1} />
-              </MenuItem>
-            </Link>
-            <Link href={navInfo.resumeLink} isExternal>
-              <MenuItem
-                variant={"ghost"}
-                icon={<FaFileAlt />}
-                colorScheme={"grey"}
-                fontSize={18}
-              >
-                Resume <ExternalLinkIcon mx="2px" fontSize={"xs"} mb={1} />
-              </MenuItem>
-            </Link>
-          </MenuList>
-        </Menu>
-        <Button onClick={toggleColorMode} size="sm" boxShadow={"lg"}>
-          <Icon as={colorMode === "light" ? SunIcon : MoonIcon} />
-        </Button>
-      </HStack>
     </HStack>
   );
 };
