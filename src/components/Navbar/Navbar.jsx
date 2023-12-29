@@ -4,7 +4,7 @@ import {
   Stack,
   HStack,
   IconButton,
-  Link,
+  Link as ChakraLink,
 } from "@chakra-ui/react";
 import {
   FaGithub,
@@ -29,12 +29,12 @@ const Navbar = () => {
         </Text>
         <HStack spacing={2} mt={2} color="grey">
           <TiLocationOutline />
-          <Link fontSize="sm" href={navInfo.locationUrl} isExternal>
+          <ChakraLink fontSize="sm" href={navInfo.locationUrl} isExternal>
             {navInfo.location}
-          </Link>
+          </ChakraLink>
         </HStack>
         <HStack>
-          <Link href={navInfo.blogLink} isExternal>
+          <ChakraLink href={navInfo.blogLink} isExternal>
             <IconButton
               size="sm"
               aria-label="Blog"
@@ -42,8 +42,8 @@ const Navbar = () => {
               icon={<FaBook />}
               colorScheme={"gray"}
             ></IconButton>
-          </Link>
-          <Link href={navInfo.githubLink} isExternal>
+          </ChakraLink>
+          <ChakraLink href={navInfo.githubLink} isExternal>
             <IconButton
               size="sm"
               aria-label="Github"
@@ -51,8 +51,8 @@ const Navbar = () => {
               icon={<FaGithub />}
               colorScheme={"gray"}
             ></IconButton>
-          </Link>
-          <Link href={navInfo.linkedinLink} isExternal>
+          </ChakraLink>
+          <ChakraLink href={navInfo.linkedinLink} isExternal>
             <IconButton
               size="sm"
               aria-label="LinkedIn"
@@ -60,8 +60,8 @@ const Navbar = () => {
               icon={<FaLinkedin />}
               colorScheme={"gray"}
             ></IconButton>
-          </Link>
-          <Link href={navInfo.instagramLink} isExternal>
+          </ChakraLink>
+          <ChakraLink href={navInfo.instagramLink} isExternal>
             <IconButton
               size="sm"
               aria-label="instagram"
@@ -69,8 +69,8 @@ const Navbar = () => {
               icon={<FaInstagram />}
               colorScheme={"gray"}
             ></IconButton>
-          </Link>
-          <Link href={navInfo.telegramLink} isExternal>
+          </ChakraLink>
+          <ChakraLink href={navInfo.telegramLink} isExternal>
             <IconButton
               size="sm"
               aria-label="telegram"
@@ -78,8 +78,8 @@ const Navbar = () => {
               icon={<FaTelegram />}
               colorScheme={"gray"}
             ></IconButton>
-          </Link>
-          <Link href={navInfo.mail} isExternal>
+          </ChakraLink>
+          <ChakraLink href={navInfo.mail} isExternal>
             <IconButton
               size="sm"
               aria-label="mail"
@@ -87,8 +87,8 @@ const Navbar = () => {
               icon={<FaEnvelope />}
               colorScheme={"gray"}
             ></IconButton>
-          </Link>
-          <Link href={navInfo.resumeLink} isExternal>
+          </ChakraLink>
+          <ChakraLink href={navInfo.resumeLink} isExternal>
             <IconButton
               size="sm"
               aria-label="Resume"
@@ -96,7 +96,7 @@ const Navbar = () => {
               icon={<FaFileAlt />}
               colorScheme={"gray"}
             ></IconButton>
-          </Link>
+          </ChakraLink>
         </HStack>
       </Stack>
     </HStack>

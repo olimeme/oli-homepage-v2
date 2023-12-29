@@ -7,9 +7,9 @@ export const navInfo = {
   telegramLink: "https://t.me/olimeme",
   instagramLink: "https://www.instagram.com/oli_san_/",
   linkedinLink: "https://www.linkedin.com/in/alibek-mombekov-247a81201/",
-  mail: "mailto:mombekovalibek22@gmail.com",
-  resume: "https://www.overleaf.com/read/ytjwvnkvbnws#bae610:",
+  resumeLink: "https://www.overleaf.com/read/ytjwvnkvbnws#bae610:",
   blogLink: "https://after-evening.vercel.app/",
+  mail: "mailto:mombekovalibek22@gmail.com",
 };
 
 export const techStack = [
