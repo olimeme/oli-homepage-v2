@@ -5,7 +5,6 @@
 ## Stack
 
 - React.js
-- Typescript
 - Chakra UI
 
 ## License
