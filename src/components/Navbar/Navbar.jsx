@@ -5,6 +5,7 @@ import {
   HStack,
   IconButton,
   Link as ChakraLink,
+  Button,
 } from "@chakra-ui/react";
 import {
   FaGithub,
@@ -35,13 +36,16 @@ const Navbar = () => {
         </HStack>
         <HStack>
           <ChakraLink href={navInfo.blogLink} isExternal>
-            <IconButton
+            {/* <IconButton
               size="sm"
               aria-label="Blog"
               variant={"outline"}
-              icon={<FaBook />}
+              icon={}
               colorScheme={"gray"}
-            ></IconButton>
+            ></IconButton> */}
+            <Button size={"sm"} leftIcon={<FaBook />} variant={"outline"}>
+              Blog
+            </Button>
           </ChakraLink>
           <ChakraLink href={navInfo.githubLink} isExternal>
             <IconButton
