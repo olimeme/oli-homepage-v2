@@ -6,6 +6,10 @@ import {
   IconButton,
   Link as ChakraLink,
   Button,
+  Spacer,
+  VStack,
+  Box,
+  useColorMode,
 } from "@chakra-ui/react";
 import {
   FaGithub,
@@ -19,12 +23,23 @@ import {
 import { TiLocationOutline } from "react-icons/ti";
 
 import { navInfo } from "../../info";
+import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 const Navbar = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <HStack spacing={"auto"} alignItems="baseline" mt="16">
-      <Stack justifyContent={"flex-start"}>
-        <Heading>{navInfo.name}</Heading>
+      <Stack justifyContent={"flex-start"} width={"100%"}>
+        <HStack justifyContent={"space-between"}>
+          <Heading>{navInfo.name}</Heading>
+          <Spacer />
+          <IconButton
+            aria-label="dark mode switch"
+            icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
+            onClick={toggleColorMode}
+          />
+        </HStack>
         <Text fontSize="sm" color="grey">
           {navInfo.position}
         </Text>
