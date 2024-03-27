@@ -101,15 +101,16 @@ export const experience = [
     employer: "Morrison",
     title: "Web Programming Instructor",
     description: [
-      "Delivered lectures on HTML, CSS and JavaScript to more than 200 students.",
+      "Delivered lectures on HTML, CSS, JavaScript and React to more than 200 students.",
       "Graded students homeworks and final projects and gave feedback on their work.",
     ],
   },
   {
     time: "Feb, 2021 - Aug, 2021",
     employer: "BI Group",
-    title: "UI/UX Designer",
+    title: "Frontend Developer Intern",
     description: [
+      "Created several pages and reusable components for HR department using React.",
       "Redesigned the old version of the corporate social media website using Figma, which led to significant 89% increase in positive user reviews and rise in the number of users by 20%.",
       "Optimized the user experience by removing unnecessary components and business processes, which increased visitor duration by 33%.",
     ],
