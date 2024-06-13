@@ -50,18 +50,11 @@ const Navbar = () => {
           </ChakraLink>
         </HStack>
         <HStack>
-          <ChakraLink href={navInfo.blogLink} isExternal>
-            {/* <IconButton
-              size="sm"
-              aria-label="Blog"
-              variant={"outline"}
-              icon={}
-              colorScheme={"gray"}
-            ></IconButton> */}
+          {/* <ChakraLink href={navInfo.blogLink} isExternal>
             <Button size={"sm"} leftIcon={<FaBook />} variant={"outline"}>
               Blog
             </Button>
-          </ChakraLink>
+          </ChakraLink> */}
           <ChakraLink href={navInfo.githubLink} isExternal>
             <IconButton
               size="sm"
