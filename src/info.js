@@ -1,7 +1,7 @@
 export const navInfo = {
   name: "Alibek Mombekov",
   position: "Frontend Developer (focusing on learning backend)",
-  location: "Dublin, Ireland",
+  location: "Astana, Kazakhstan",
   locationUrl: "https://maps.app.goo.gl/fQA5s5kWE3VUW4XC7",
   githubLink: "https://github.com/olimeme",
   telegramLink: "https://t.me/olimeme",
