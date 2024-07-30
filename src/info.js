@@ -7,7 +7,10 @@ export const navInfo = {
   telegramLink: "https://t.me/olimeme",
   instagramLink: "https://www.instagram.com/oli_san_/",
   linkedinLink: "https://www.linkedin.com/in/alibek-mombekov-247a81201/",
-  resumeLink: "https://www.overleaf.com/read/ytjwvnkvbnws#bae610:",
+  resumeLinkEN:
+    "https://drive.google.com/file/d/1HyGLk7Z9Kg8o-oRSLNE5MsHVrofHTYXQ/view?usp=sharing",
+  resumeLinkRU:
+    "https://drive.google.com/file/d/1Mn5v9txCZjgZPu-8x6mkAar1NgT6IdFD/view?usp=sharing",
   blogLink: "https://after-evening.vercel.app/",
   mail: "mailto:mombekovalibek22@gmail.com",
 };

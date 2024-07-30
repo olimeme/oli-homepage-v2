@@ -10,6 +10,10 @@ import {
   VStack,
   Box,
   useColorMode,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
 } from "@chakra-ui/react";
 import {
   FaGithub,
@@ -23,7 +27,12 @@ import {
 import { TiLocationOutline } from "react-icons/ti";
 
 import { navInfo } from "../../info";
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import {
+  ChevronDownIcon,
+  ExternalLinkIcon,
+  MoonIcon,
+  SunIcon,
+} from "@chakra-ui/icons";
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -73,7 +82,7 @@ const Navbar = () => {
               colorScheme={"gray"}
             ></IconButton>
           </ChakraLink>
-          <ChakraLink href={navInfo.instagramLink} isExternal>
+          {/* <ChakraLink href={navInfo.instagramLink} isExternal>
             <IconButton
               size="sm"
               aria-label="instagram"
@@ -81,7 +90,7 @@ const Navbar = () => {
               icon={<FaInstagram />}
               colorScheme={"gray"}
             ></IconButton>
-          </ChakraLink>
+          </ChakraLink> */}
           <ChakraLink href={navInfo.telegramLink} isExternal>
             <IconButton
               size="sm"
@@ -100,7 +109,36 @@ const Navbar = () => {
               colorScheme={"gray"}
             ></IconButton>
           </ChakraLink>
-          <ChakraLink href={navInfo.resumeLink} isExternal>
+          <Menu>
+            <MenuButton
+              as={Button}
+              size="sm"
+              aria-label="Resume"
+              variant={"outline"}
+              rightIcon={<ChevronDownIcon />}
+            >
+              Resume
+            </MenuButton>
+            <MenuList p={0} minW="0" w={"100px"}>
+              <MenuItem
+                as={ChakraLink}
+                href={navInfo.resumeLinkEN}
+                isExternal
+                icon={<ExternalLinkIcon />}
+              >
+                EN
+              </MenuItem>
+              <MenuItem
+                as={ChakraLink}
+                href={navInfo.resumeLinkRU}
+                isExternal
+                icon={<ExternalLinkIcon />}
+              >
+                RU
+              </MenuItem>
+            </MenuList>
+          </Menu>
+          {/* <ChakraLink href={navInfo.resumeLink} isExternal>
             <IconButton
               size="sm"
               aria-label="Resume"
@@ -108,7 +146,7 @@ const Navbar = () => {
               icon={<FaFileAlt />}
               colorScheme={"gray"}
             ></IconButton>
-          </ChakraLink>
+          </ChakraLink> */}
         </HStack>
       </Stack>
     </HStack>
