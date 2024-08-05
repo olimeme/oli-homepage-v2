@@ -21,7 +21,7 @@ import { projects } from "../../info";
 
 const Projects = () => {
   const items = projects.map((item) => (
-    <Card key={item.title} s>
+    <Card key={item.title} boxShadow="lg">
       <CardBody>
         <Link href={item.link} isExternal>
           <Heading size={"md"}>{item.title}</Heading>
@@ -45,7 +45,7 @@ const Projects = () => {
   return (
     <Section title="Projects">
       <Grid
-        templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
+        templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
         gap={8}
       >
         {items}
