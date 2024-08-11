@@ -5,8 +5,9 @@ const Footer = () => {
   return (
     <Center p={10}>
       <Text fontSize={"sm"} color="grey">
-        © 2023 <Link href="https://github.com/olimeme">Alibek Mombekov</Link>.
-        All Rights Reserved.
+        © {new Date().getFullYear()}{" "}
+        <Link href="https://github.com/olimeme">Alibek Mombekov</Link>. All
+        Rights Reserved.
       </Text>
     </Center>
   );
