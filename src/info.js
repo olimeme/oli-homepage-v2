@@ -1,6 +1,6 @@
 export const navInfo = {
   name: "Alibek Mombekov",
-  position: "Frontend Developer (focusing on learning backend)",
+  position: "Frontend Engineer @ Zimalab",
   location: "Astana, Kazakhstan",
   locationUrl: "https://maps.app.goo.gl/fQA5s5kWE3VUW4XC7",
   githubLink: "https://github.com/olimeme",
@@ -8,10 +8,10 @@ export const navInfo = {
   instagramLink: "https://www.instagram.com/oli_san_/",
   linkedinLink: "https://www.linkedin.com/in/alibek-mombekov-247a81201/",
   resumeLinkEN:
-    "https://drive.google.com/file/d/1HyGLk7Z9Kg8o-oRSLNE5MsHVrofHTYXQ/view?usp=sharing",
+    "https://drive.google.com/file/d/1NF5kATUgZ1EydXC0Zo14Rz19rydM3ph3/view?usp=sharing",
   resumeLinkRU:
-    "https://drive.google.com/file/d/1Mn5v9txCZjgZPu-8x6mkAar1NgT6IdFD/view?usp=sharing",
-  blogLink: "https://after-evening.vercel.app/",
+    "https://drive.google.com/file/d/1DV6TJXSLdsHO6MqWbkeDk0yE1RtrCv-2/view?usp=sharing",
+  // blogLink: "https://after-evening.vercel.app/",
   mail: "mailto:mombekovalibek22@gmail.com",
 };
 
@@ -72,8 +72,14 @@ export const techStack = [
 
 export const biography = [
   {
-    year: "2002",
-    description: "Born in Astana, Kazakhstan.",
+    year: "2024",
+    description:
+      "Graduated Dublin City University with a Master's Degree in Computing majoring Secure Software Engineering",
+  },
+  {
+    year: "2023",
+    description:
+      "Graduated Astana IT University with a Bachelor's Degree (honours) in Telecommunication Systems",
   },
   {
     year: "2018",
@@ -81,22 +87,31 @@ export const biography = [
       "Volunteering in major events, as IRONMAN 70.3, BI Marathon, AFD, Global Blockchain Business Council",
   },
   {
-    year: "2023",
-    description:
-      "Graduated with a bachelor's degree in Telecommunication Systems",
+    year: "2002",
+    description: "Born in Astana, Kazakhstan.",
   },
 ];
 
 export const experience = [
   {
+    time: "Aug, 2022 - Present",
+    employer: "Zimalab",
+    title: "Frontend Engineer",
+    description: [
+      "Collaborated with cross-functional teams in an Agile environment to deliver high-quality, scalable solutions within sprint deadlines.",
+      "Improved user retention rates by 15% by implementing smooth animations using GSAP. ",
+      "Created a reusable UI component library with Tailwind, saving 200 hours in development and reducing future feature implementation time by 25%.",
+      "Optimized UI performance through Web Vitals, improving load times by 30%.",
+    ],
+  },
+  {
     time: "Jul, 2022 - Jul, 2023",
     employer: "Astana IT University",
-    title: "Frontend Developer",
+    title: "Frontend Engineer",
     description: [
-      "Developed and supported Digital University platform for academic processes, which is used by over 4000 students monthly.",
-      "Developed a grading platform used by faculty, thereby digitizing the grading system for a college that previously used paper journals.",
-      "Supported legacy projects and developed new features for facilitation of academic processes.",
-      "Improved user experience by redesigning website UI and adding Dark Mode feature, which led to user number increase by 43%",
+      "Developed and supported the Digital University platform using React, TypeScript, Java, and AntD, which facilitated academic processes for over 4000 students monthly, leading to a significant improvement in user experience.",
+      "Led the transition to a fully digital grading platform that automated data entry tasks, saving the team an estimated 15 hours per week, while ensuring compliance with modern educational standards and practices.",
+      "Redesigned the website UI and added a Dark Mode feature, which increased user engagement by 43%.",
     ],
   },
   {
@@ -111,11 +126,11 @@ export const experience = [
   {
     time: "Feb, 2021 - Aug, 2021",
     employer: "BI Group",
-    title: "Frontend Developer Intern",
+    title: "Frontend Engineer Intern",
     description: [
-      "Created several pages and reusable components for HR department using React.",
-      "Redesigned the old version of the corporate social media website using Figma, which led to significant 89% increase in positive user reviews and rise in the number of users by 20%.",
-      "Optimized the user experience by removing unnecessary components and business processes, which increased visitor duration by 33%.",
+      "Developed a fully integrated React application for HR that centralized employee resources, resulting in over 300 hours saved annually in administrative tasks and enabling HR to focus on strategic initiatives.",
+      "Redesigned the corporate social media platform using Figma, leading to an 89% increase in positive user feedback and a 20% rise in user engagement.",
+      "Streamlined the user interface by eliminating redundant features and simplifying navigation; these enhancements resulted in a 25% increase in user satisfaction ratings and a 15% reduction in support inquiries. ",
     ],
   },
 ];
@@ -125,13 +140,13 @@ export const education = [
     time: "2020 - 2023",
     university: "Astana IT University",
     degree: "B.Sc. in Infomration and Communication Technologies",
-    GPA: "3.57 / 4.00",
+    // GPA: "3.57 / 4.00",
   },
   {
     time: "2023 - 2024",
     university: "Dublin City University",
     degree: "M.Sc. in Computing (Secure Software Engineering)",
-    GPA: "",
+    // GPA: "",
   },
 ];
 

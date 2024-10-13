@@ -19,7 +19,7 @@ const Education = () => {
         </Text>
       </HStack>
       <Text fontSize={"xs"} as="i" color="grey">
-        {item.degree} - {item.GPA}
+        {item.degree} {item.GPA}
       </Text>
     </ListItem>
   ));

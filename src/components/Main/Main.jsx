@@ -9,7 +9,7 @@ import Skills from "../Skills/Skills";
 const Main = () => {
   return (
     <>
-      <Biography />
+      {/* <Biography /> */}
       <Skills />
       <Experience />
       <Education />
