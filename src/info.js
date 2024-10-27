@@ -94,7 +94,7 @@ export const biography = [
 
 export const experience = [
   {
-    time: "Aug, 2022 - Present",
+    time: "Aug, 2024 - Present",
     employer: "Zimalab",
     title: "Frontend Engineer",
     description: [
