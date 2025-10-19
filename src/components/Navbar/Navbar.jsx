@@ -7,8 +7,8 @@ import {
   Link as ChakraLink,
   Button,
   Spacer,
-  VStack,
-  Box,
+  // VStack,
+  // Box,
   useColorMode,
   Menu,
   MenuButton,
@@ -18,11 +18,11 @@ import {
 import {
   FaGithub,
   FaLinkedin,
-  FaFileAlt,
-  FaInstagram,
+  // FaFileAlt,
+  // FaInstagram,
   FaTelegram,
   FaEnvelope,
-  FaBook,
+  // FaBook,
 } from "react-icons/fa";
 import { TiLocationOutline } from "react-icons/ti";
 
@@ -128,14 +128,14 @@ const Navbar = () => {
               >
                 EN
               </MenuItem>
-              <MenuItem
+              {/* <MenuItem
                 as={ChakraLink}
                 href={navInfo.resumeLinkRU}
                 isExternal
                 icon={<ExternalLinkIcon />}
               >
                 RU
-              </MenuItem>
+              </MenuItem> */}
             </MenuList>
           </Menu>
           {/* <ChakraLink href={navInfo.resumeLink} isExternal>

@@ -1,21 +1,53 @@
 export const navInfo = {
   name: "Alibek Mombekov",
-  position: "Frontend Engineer @ Zimalab",
-  location: "Astana, Kazakhstan",
+  position: "Data Engineer @ Kaspi",
+  location: "Almaty, Kazakhstan",
   locationUrl: "https://maps.app.goo.gl/fQA5s5kWE3VUW4XC7",
   githubLink: "https://github.com/olimeme",
   telegramLink: "https://t.me/olimeme",
   instagramLink: "https://www.instagram.com/oli_san_/",
   linkedinLink: "https://www.linkedin.com/in/alibek-mombekov-247a81201/",
   resumeLinkEN:
-    "https://drive.google.com/file/d/1NF5kATUgZ1EydXC0Zo14Rz19rydM3ph3/view?usp=sharing",
-  resumeLinkRU:
-    "https://drive.google.com/file/d/1DV6TJXSLdsHO6MqWbkeDk0yE1RtrCv-2/view?usp=sharing",
+    "https://drive.google.com/file/d/1IphZXrqAFcma0M6uh_0tQAOEiyg92Vh7/view?usp=sharing",
+  // resumeLinkRU:
+  // "https://drive.google.com/file/d/1DV6TJXSLdsHO6MqWbkeDk0yE1RtrCv-2/view?usp=sharing",
   // blogLink: "https://after-evening.vercel.app/",
   mail: "mailto:mombekovalibek22@gmail.com",
 };
 
 export const techStack = [
+  {
+    title: "Apache Kafka",
+    color: "yellow",
+  },
+  {
+    title: "Elasticsearch",
+    color: "yellow",
+  },
+  {
+    title: "Redis",
+    color: "yellow",
+  },
+  {
+    title: "Python",
+    color: "yellow",
+  },
+  {
+    title: "Golang",
+    color: "yellow",
+  },
+  {
+    title: "OracleDB",
+    color: "yellow",
+  },
+  {
+    title: "Starrocks",
+    color: "yellow",
+  },
+  {
+    title: "OracleDB",
+    color: "yellow",
+  },
   {
     title: "JavaScript",
     color: "yellow",
@@ -31,10 +63,6 @@ export const techStack = [
   {
     title: "Vue",
     color: "green",
-  },
-  {
-    title: "Go",
-    color: "blue",
   },
   {
     title: "Java",
@@ -94,7 +122,18 @@ export const biography = [
 
 export const experience = [
   {
-    time: "Aug, 2024 - Present",
+    time: "May, 2025 - Present",
+    employer: "Kaspi.kz",
+    title: "Data Engineer",
+    description: [
+      "Built and optimized real-time ETL pipelines with Kafka and Python, enriching events with PostgreSQL lookups and processing 100M+ records daily, reducing ingestion delays by 20% and ensuring reliable analytics data.",
+      "Designed and implemented data services in Go integrating Redis and Elasticsearch, improving query response times by 30% and supporting scalable customer-facing applications.",
+      "Supported the migration of 200+ OracleDB tables to PostgreSQL, validating schema design and data accuracy, resulting in a 25% improvement in query performance for business-critical workloads.",
+      "Collaborated with cross-functional engineering and analytics teams to productionize prototypes into robust pipelines, improving data accessibility for reporting and insights.",
+    ],
+  },
+  {
+    time: "Aug, 2024 - May, 2025",
     employer: "Zimalab",
     title: "Frontend Engineer",
     description: [
