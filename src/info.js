@@ -6,7 +6,7 @@ export const navInfo = {
   githubLink: "https://github.com/olimeme",
   telegramLink: "https://t.me/olimeme",
   instagramLink: "https://www.instagram.com/oli_san_/",
-  linkedinLink: "https://www.linkedin.com/in/alibek-mombekov-247a81201/",
+  // linkedinLink: "https://www.linkedin.com/in/alibek-mombekov-247a81201/",
   resumeLinkEN:
     "https://drive.google.com/file/d/1IphZXrqAFcma0M6uh_0tQAOEiyg92Vh7/view?usp=sharing",
   // resumeLinkRU:
@@ -133,24 +133,31 @@ export const experience = [
     ],
   },
   {
-    time: "Aug, 2024 - May, 2025",
+    time: "Mar, 2025 - May, 2025",
+    employer: "Yandex",
+    title: "Software Engineer Intern",
+    description: [
+      "Increased API throughput by 37%* by redesigning the portfolio valuation microservice using Go, gRPC, and Redis, implementing asynchronous job handling to reduce service latency.",
+      "Improved data pipeline performance by 52%* by optimizing indexing in PostgreSQL, accelerating ETL flows built with Python, Airflow, and Kafka, and refactoring processing logic to boost end-to-end throughput.",
+      "Cut deployment time by 43%* by implementing automated CI/CD workflows in Yandex Cloud, using GitLab CI, Docker, and automated static analysis tools to streamline releases.",
+    ],
+  },
+  {
+    time: "Aug, 2024 - Mar, 2025",
     employer: "Zimalab",
     title: "Frontend Engineer",
     description: [
+      "Built reusable components and optimized application performance*, reducing feature delivery time by 25%.",
       "Collaborated with cross-functional teams in an Agile environment to deliver high-quality, scalable solutions within sprint deadlines.",
-      "Improved user retention rates by 15% by implementing smooth animations using GSAP. ",
-      "Created a reusable UI component library with Tailwind, saving 200 hours in development and reducing future feature implementation time by 25%.",
-      "Optimized UI performance through Web Vitals, improving load times by 30%.",
     ],
   },
   {
     time: "Jul, 2022 - Jul, 2023",
     employer: "Astana IT University",
-    title: "Frontend Engineer",
+    title: "Software Engineer",
     description: [
-      "Developed and supported the Digital University platform using React, TypeScript, Java, and AntD, which facilitated academic processes for over 4000 students monthly, leading to a significant improvement in user experience.",
-      "Led the transition to a fully digital grading platform that automated data entry tasks, saving the team an estimated 15 hours per week, while ensuring compliance with modern educational standards and practices.",
-      "Redesigned the website UI and added a Dark Mode feature, which increased user engagement by 43%.",
+      "Designed and maintained a full-stack academic platform* (React + Java) used by 4,000+ monthly users, integrating scalable backend services and improving overall system usability and reliability.",
+      "Implemented secure LDAP-based authentication for university staff and students*, integrating OpenLDAP, Spring Security, and SSO protocols to streamline access management and reduce login-related support requests by over 30%.",
     ],
   },
   {

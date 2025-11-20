@@ -17,7 +17,6 @@ import {
 } from "@chakra-ui/react";
 import {
   FaGithub,
-  FaLinkedin,
   // FaFileAlt,
   // FaInstagram,
   FaTelegram,
@@ -73,7 +72,7 @@ const Navbar = () => {
               colorScheme={"gray"}
             ></IconButton>
           </ChakraLink>
-          <ChakraLink href={navInfo.linkedinLink} isExternal>
+          {/* <ChakraLink href={navInfo.linkedinLink} isExternal>
             <IconButton
               size="sm"
               aria-label="LinkedIn"
@@ -81,7 +80,7 @@ const Navbar = () => {
               icon={<FaLinkedin />}
               colorScheme={"gray"}
             ></IconButton>
-          </ChakraLink>
+          </ChakraLink> */}
           {/* <ChakraLink href={navInfo.instagramLink} isExternal>
             <IconButton
               size="sm"

@@ -1,11 +1,4 @@
-import {
-  Button,
-  Icon,
-  Link,
-  ListItem,
-  Text,
-  UnorderedList,
-} from "@chakra-ui/react";
+import { Button, Link, ListItem, UnorderedList } from "@chakra-ui/react";
 import React from "react";
 import {
   FaBehance,
