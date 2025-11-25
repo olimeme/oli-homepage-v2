@@ -133,21 +133,11 @@ export const experience = [
     ],
   },
   {
-    time: "Mar, 2025 - May, 2025",
-    employer: "Yandex",
-    title: "Software Engineer Intern",
-    description: [
-      "Increased API throughput by 37%* by redesigning the portfolio valuation microservice using Go, gRPC, and Redis, implementing asynchronous job handling to reduce service latency.",
-      "Improved data pipeline performance by 52%* by optimizing indexing in PostgreSQL, accelerating ETL flows built with Python, Airflow, and Kafka, and refactoring processing logic to boost end-to-end throughput.",
-      "Cut deployment time by 43%* by implementing automated CI/CD workflows in Yandex Cloud, using GitLab CI, Docker, and automated static analysis tools to streamline releases.",
-    ],
-  },
-  {
     time: "Aug, 2024 - Mar, 2025",
     employer: "Zimalab",
     title: "Frontend Engineer",
     description: [
-      "Built reusable components and optimized application performance*, reducing feature delivery time by 25%.",
+      "Built reusable components and optimized application performance, reducing feature delivery time by 25%.",
       "Collaborated with cross-functional teams in an Agile environment to deliver high-quality, scalable solutions within sprint deadlines.",
     ],
   },
@@ -156,8 +146,8 @@ export const experience = [
     employer: "Astana IT University",
     title: "Software Engineer",
     description: [
-      "Designed and maintained a full-stack academic platform* (React + Java) used by 4,000+ monthly users, integrating scalable backend services and improving overall system usability and reliability.",
-      "Implemented secure LDAP-based authentication for university staff and students*, integrating OpenLDAP, Spring Security, and SSO protocols to streamline access management and reduce login-related support requests by over 30%.",
+      "Designed and maintained a full-stack academic platform (React + Java) used by 4,000+ monthly users, integrating scalable backend services and improving overall system usability and reliability.",
+      "Implemented secure LDAP-based authentication for university staff and students, integrating OpenLDAP, Spring Security, and SSO protocols to streamline access management and reduce login-related support requests by over 30%.",
     ],
   },
   {
