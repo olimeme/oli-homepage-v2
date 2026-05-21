@@ -1,8 +1,6 @@
 import {
-  Card,
   HStack,
   Heading,
-  List,
   ListItem,
   Text,
   UnorderedList,
@@ -25,8 +23,9 @@ const Experience = () => {
         {item.description.map((item) => (
           <ListItem
             color="grey"
-            fontSize={"xs"}
+            fontSize={"sm"}
             textAlign={"justify"}
+            mt="2"
             key={item.length + Math.random()}
           >
             {item}

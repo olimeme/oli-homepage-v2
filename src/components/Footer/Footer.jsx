@@ -6,8 +6,8 @@ const Footer = () => {
     <Center p={10}>
       <Text fontSize={"sm"} color="grey">
         © {new Date().getFullYear()}{" "}
-        <Link href="https://github.com/olimeme">Alibek Mombekov</Link>. All
-        Rights Reserved.
+        <Link href="https://github.com/olimeme">Alibek Mombekov</Link>.
+        Something-something very important, feel free to use this template.
       </Text>
     </Center>
   );

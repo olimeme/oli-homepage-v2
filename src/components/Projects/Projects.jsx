@@ -1,18 +1,12 @@
 import {
-  Button,
   Card,
   CardBody,
   Heading,
-  Image,
   Link,
-  Spacer,
   Tag,
   Text,
-  IconButton,
   Wrap,
-  Flex,
   Grid,
-  GridItem,
   CardFooter,
 } from "@chakra-ui/react";
 import React, { useEffect } from "react";
@@ -26,7 +20,7 @@ const Projects = () => {
         <Link href={item.link} isExternal>
           <Heading size={"md"}>{item.title}</Heading>
         </Link>
-        <Text fontSize={"xs"} color={"gray"} mt={2}>
+        <Text fontSize={"sm"} color={"gray"} mt={2}>
           {item.description}
         </Text>
       </CardBody>

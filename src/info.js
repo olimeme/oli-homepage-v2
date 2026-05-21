@@ -6,11 +6,11 @@ export const navInfo = {
   githubLink: "https://github.com/olimeme",
   telegramLink: "https://t.me/olimeme",
   instagramLink: "https://www.instagram.com/oli_san_/",
-  // linkedinLink: "https://www.linkedin.com/in/alibek-mombekov-247a81201/",
+  linkedinLink: "https://www.linkedin.com/in/alibek-mombekov-247a81201/",
   resumeLinkEN:
-    "https://drive.google.com/file/d/1IphZXrqAFcma0M6uh_0tQAOEiyg92Vh7/view?usp=sharing",
-  // resumeLinkRU:
-  // "https://drive.google.com/file/d/1DV6TJXSLdsHO6MqWbkeDk0yE1RtrCv-2/view?usp=sharing",
+    "https://drive.google.com/file/d/1dW-iy9oSdKVgT9I-rKUMSRRn2s2n14F7/view?usp=sharing",
+  resumeLinkRU:
+    "https://drive.google.com/file/d/1grm3g6537Bg9__jSZlQqEhXqS-vzEmmf/view?usp=sharing",
   // blogLink: "https://after-evening.vercel.app/",
   mail: "mailto:mombekovalibek22@gmail.com",
 };

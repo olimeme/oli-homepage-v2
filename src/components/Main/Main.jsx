@@ -10,7 +10,7 @@ const Main = () => {
   return (
     <>
       {/* <Biography /> */}
-      <Skills />
+      {/* <Skills /> */}
       <Experience />
       <Education />
       <Projects />
