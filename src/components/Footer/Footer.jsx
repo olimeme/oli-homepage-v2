@@ -1,4 +1,4 @@
-import { Center, Spacer, Text, Link } from "@chakra-ui/react";
+import { Center, Text, Link } from "@chakra-ui/react";
 import React from "react";
 
 const Footer = () => {
