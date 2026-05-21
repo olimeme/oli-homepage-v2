@@ -9,7 +9,7 @@ import {
   Grid,
   CardFooter,
 } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import React from "react";
 import Section from "../Section/Section";
 import { projects } from "../../info";
 
